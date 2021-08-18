@@ -1,0 +1,16 @@
+Notes:
+
+- The Game class should be kept as simple as possible
+- You should create classes when you can make a sentence out of why you need that specific thing
+    - Ex: I need a player in order to play the game (noun/verb)
+- Member functions should be doing only ONE thing
+    - Whatever you name the function, that's the action the function should be completing
+- When you initialize something, it means that space in memory has been allocated for it
+    - Example(of wrong):
+        - var selectedCards: HashMap<String, String>
+            - this just says the map exists, it is NOT initialized
+            - if you tried to add values to this map, it would break
+    - Example(of right):
+        - var selectedCards = HashMap<String, String>()
+        - this is initialized as an empty hash map and space in memory has been allocated for it
+- It's better practice to send data into the constructor of a class instead of setting it later
